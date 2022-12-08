@@ -10,28 +10,22 @@
         <img src="img/logotype.svg" width="185" height="96" alt="Седона.">
       </a>
       <nav class="main-navigation">
-        <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="main-navigation__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
         <div class="main-navigation__wrapper">
           <ul class="main-navigation__list site-list">
             <li class="site-list__item site-list__item--current">
-              <a href="#">
-                Главная
-              </a>
+              <a class="site-list__link" href="#">Главная</a>
             </li>
             <li class="site-list__item">
-              <a href="#">
-                Фото и видео
-              </a>
+              <a href="#">Фото и видео</a>
             </li>
             <li class="site-list__item">
-              <a href="#">
-                Форма отзыва
-              </a>
+              <a href="#">Форма отзыва</a>
             </li>
             <li class="site-list__item">
-              <a href="#">
-                HTML ACADEMY
-              </a>
+              <a href="#">HTML ACADEMY</a>
             </li>
           </ul>
         </div>
@@ -40,22 +34,20 @@
 
     <main class="main-container">
       <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
-      <section class="intro">
-        <div class="intro__hero">
-          <img class="welcome" src="img/welcome_to_sedona.svg" alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!" width="282" height="214">
-        </div>
-        <div class="intro__wrapper">
-          <h2 class="intro__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-          <p class="intro__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-        </div>
-      </section>
       <section class="advantages">
         <div class="advantages__wrapper">
           <h2 class="visually-hidden">Преимущества</h2>
+          <div class="advantages__hero">
+            <img class="advantages__image" src="img/welcome_to_sedona.svg" alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!" width="282" height="214">
+          </div>
+          <div class="advantages__wrapper">
+            <h2 class="advantages__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+            <p class="advantages__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+          </div>
           <ul class="advantages__list">
             <li class="advantages__item">
               <h3 class="advantages__title">Настоящий городок</h3>
-              <p class="advantages__number">— №1 —</p>
+              <span class="advantages__number">— №1 —</span>
               <p class="advantages__description">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
               <img class="advantages__image" src="img/city.png" alt="Повседневный вид на улицу города с зелеными кустами и цветами, заведениями на фоне Гранд-Каньон." width="320" height="260">
                 <ul class="advantages__list specifics-list">
@@ -75,23 +67,23 @@
             </li>
             <li class="advantages__item">
               <h3 class="advantages__title">Там есть мост дъявола</h3>
-              <p class="advantages__number">— №2 —</p>
+              <span class="advantages__number">— №2 —</span>
               <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               <img class="advantages__image" src="img/bridge.png" alt="Пейзажный вид на мост Дъявола." width="320" height="260">
             </li>
             <li class="advantages__item">
               <h3 class="advantages__title">Небольшая площадь</h3>
-              <p class="advantages__number">— №3 —</p>
+              <span class="advantages__number">— №3 —</span>
               <p class="advantages__description">Все интересные места находятся очень близко</p>
             </li>
             <li class="advantages__item">
               <h3 class="advantages__title">Красивая дорога</h3>
-              <p class="advantages__number">— №4 —</p>
+              <span class="advantages__number">— №4 —</span>
               <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </li>
             <li class="advantages__item">
               <h3 class="advantages__title">Мало туристов</h3>
-              <p class="advantages__number">— №5 —</p>
+              <span class="advantages__number">— №5 —</span>
               <p class="advantages__description">Большинство едет в Гранд Каньон и толпится там</p>
             </li>
           </ul>
@@ -102,13 +94,20 @@
         <div class="searching__wrapper">
           <h2 class="searching__title">Заинтересовались?</h2>
           <p class="searching__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-          <button class="searching__button" href="#">Найти гостиницу</button>
+          <a class="searching__button button-main" href="#">Найти гостиницу</a>
         </div>
       </section>
 
       <section class="map">
-        <img class="map-image" src="img/map_mobile.png" alt="Карта местоположения Седоны" width="320" height="350">
+        <div>
+          АЙфрейм
+        </div>
+        <div>
+          <img class="map__image" src="img/map_mobile.png" alt="Карта местоположения Седоны" width="320" height="350">
+        </div>
       </section>
+
+
     </main>
 
     <footer class="main-footer">
