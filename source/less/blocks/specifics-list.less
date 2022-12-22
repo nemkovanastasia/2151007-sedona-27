@@ -24,7 +24,9 @@
 
 @media (min-width: @tablet-width) {
   .specifics-list {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -44,5 +46,16 @@
 
   .specifics-list__description {
     padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .specifics-list__item {
+    padding: 69px 50px 68px;
+  }
+
+  .specifics-list__item--gift {
+    width: 216px;
+    padding: 69px 92px 56px;
   }
 }
