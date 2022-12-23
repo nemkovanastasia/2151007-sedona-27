@@ -1,5 +1,7 @@
 .reasons {
   text-align: center;
+  margin-left: 26px;
+  margin-right: 26px;
 }
 
 .reasons__title {
@@ -16,5 +18,39 @@
   font-weight: 400;
   line-height: 21px;
   margin: 0;
-  padding-bottom: 11px;
+  padding-bottom: 16px;
+}
+
+@media (min-width: @tablet-width) {
+  .reasons {
+    margin-left: 142px;
+    margin-right: 142px;
+  }
+
+  .reasons__title {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+    padding-bottom: 28px;
+  }
+
+  .reasons__description {
+    padding-bottom: 57px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reasons {
+    margin: 59px 359px 45px 357px;
+  }
+
+  .reasons__title {
+    width: 438px;
+    padding-bottom: 28px;
+    margin: 0 auto;
+  }
+
+  .reasons__description {
+    padding: 0;
+  }
 }

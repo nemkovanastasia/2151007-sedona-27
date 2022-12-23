@@ -15,10 +15,12 @@
   width: 262px;
   margin: 0 auto;
   padding-bottom: 33px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
 }
 
 .searching__button {
-  width: 284px;
   padding: 16px 49px;
   border: none;
   background-color: @main-color;
@@ -29,4 +31,23 @@
   line-height: 26px;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+@media (min-width: @tablet-width) {
+  .searching {
+    margin: 61px 155px 58px;
+  }
+
+  .searching__title {
+    padding-bottom: 31px;
+  }
+
+  .searching__description {
+    width: 435px;
+    padding-bottom: 41px;
+  }
+
+  .searching__button {
+    padding: 15px 121px 18px;
+  }
 }

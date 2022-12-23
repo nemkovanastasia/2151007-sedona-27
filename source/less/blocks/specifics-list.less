@@ -22,3 +22,40 @@
   padding-top: 16px;
 }
 
+@media (min-width: @tablet-width) {
+  .specifics-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .specifics-list__item {
+    padding: 60px 33px 61px;
+  }
+
+  .specifics-list__title {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+    padding: 0;
+    padding-bottom: 23px;
+  }
+
+  .specifics-list__description {
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .specifics-list__item {
+    padding: 69px 50px 68px;
+  }
+
+  .specifics-list__item--gift {
+    width: 216px;
+    padding: 69px 92px 56px;
+  }
+}

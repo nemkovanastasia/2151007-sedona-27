@@ -1,4 +1,17 @@
 .main-navigation__list {
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: @tablet-width) or (min-width: @desktop-width) {
+  .main-navigation__list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .main-navigation__toggle {
+    display: none;
+  }
 }

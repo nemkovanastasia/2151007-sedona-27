@@ -16,3 +16,43 @@
   text-decoration: none;
   color: @white-color;
 }
+
+@media (min-width: @tablet-width) or (min-width: @desktop-width) {
+  .site-list__wrapper--left {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .site-list__wrapper--right {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .site-list__link {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    display: block;
+    padding-top: 18px;
+    color: @black-color;
+  }
+
+  .site-list__link--current {
+    color: #766357;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .site-list__item {
+    background-color: @white-color;
+    width: 153px;
+    height: 56px;
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list__item {
+    width: 240px;
+  }
+}

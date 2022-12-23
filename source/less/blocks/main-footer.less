@@ -1,0 +1,29 @@
+.main-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 77px 23px;
+}
+
+.main-footer__information {
+  padding-bottom: 33.5px;
+}
+
+@media (min-width: @tablet-width) or (min-width: @desktop-width) {
+  .main-footer__wrapper {
+    flex-direction: row;
+    color: #000000;
+    padding: 36px 76px 45px;
+  }
+
+  .main-footer__hashtag {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+  }
+
+  .main-footer__information {
+    padding: 0;
+  }
+}
